@@ -1,6 +1,8 @@
 import Sidebar from '../components/layout/Sidebar'
 import Header from '../components/layout/Header'
 import SummaryCard from '../components/dashboard/SummaryCard'
+import EnrollmentChart from '../components/dashboard/EnrollmentChart'
+import PerformanceChart from '../components/dashboard/PerformanceChart'
 import UserDistribution from '../components/dashboard/UserDistribution'
 import AcademicOverview from '../components/dashboard/AcademicOverview'
 import AnalyticsOverview from '../components/dashboard/AnalyticsOverview'
@@ -27,27 +29,34 @@ function Dashboard() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-8">
             <SummaryCard title="Total Students" value="1,250" />
-            <SummaryCard title="Total Faculty" value="85" />
-            <SummaryCard title="Total Alumni" value="350" />
-            <SummaryCard title="Total Active Users" value="1,685" />
-
-            <SummaryCard title="Total Programs" value="12" />
-            <SummaryCard title="Total Subjects" value="96" />
-            <SummaryCard title="Pending Appointments" value="18" />
-            <SummaryCard title="Active Academic Terms" value="1" />
+            <SummaryCard title="Total Faculty" value="20" />
+            <SummaryCard title="Total Alumni" value="300" />
+            <SummaryCard title="Total Active Users" value="1,300" />
+            <SummaryCard title="Total Programs" value="10" />
+            <SummaryCard title="Total Subjects" value="50" />
+            <SummaryCard title="Pending Appointments" value="20" />
+            <SummaryCard title="Active Academic Terms" value="2" />
           </div>
 
-          <UserDistribution />
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 mt-8">
+            <EnrollmentChart />
+            <PerformanceChart />
+          </div>
 
-          <AcademicOverview />
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 mt-8">
+            <UserDistribution />
+            <AnalyticsOverview />
+          </div>
 
-          <AnalyticsOverview />
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 mt-8">
+            <AcademicOverview />
+            <RecentActivities />
+          </div>
 
-          <RecentActivities />
-
-          <Notifications />
-
-          <SystemHealth />
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 mt-8">
+            <Notifications />
+            <SystemHealth />
+          </div>
         </main>
       </div>
     </div>

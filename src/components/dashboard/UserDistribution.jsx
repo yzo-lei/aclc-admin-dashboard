@@ -2,11 +2,11 @@ function UserDistribution() {
   const users = [
     { role: 'Students', count: 1250 },
     { role: 'Faculty', count: 85 },
-    { role: 'Registrar', count: 8 },
-    { role: 'Academic Head', count: 3 },
-    { role: 'Cashier', count: 5 },
-    { role: 'Admissions', count: 6 },
-    { role: 'Alumni', count: 350 },
+    { role: 'Registrar', count: 2 },
+    { role: 'Academic Head', count: 1 },
+    { role: 'Cashier', count: 3 },
+    { role: 'Admissions', count: 5 },
+    { role: 'Alumni', count: 300 },
     { role: 'Administrators', count: 3 },
   ]
 

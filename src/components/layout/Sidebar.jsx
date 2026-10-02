@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Sidebar() {
   return (
     <aside className="w-64 min-h-screen bg-gray-900 text-white p-5">
@@ -6,45 +8,54 @@ function Sidebar() {
       </h2>
 
       <nav className="space-y-2">
-        <button className="block w-full text-left px-4 py-2 rounded bg-gray-700">
+        <Link
+          to="/"
+          className="block w-full text-left px-4 py-2 rounded bg-gray-700 hover:bg-gray-700"
+        >
           Dashboard
-        </button>
+        </Link>
 
         <p className="text-xs text-gray-400 uppercase mt-6 mb-2">
           User Management
         </p>
 
-        <button className="block w-full text-left px-4 py-2 rounded hover:bg-gray-700">
+        <Link to="/users" className="block w-full text-left px-4 py-2 rounded hover:bg-gray-700">
           Users
-        </button>
+        </Link>
 
-        <button className="block w-full text-left px-4 py-2 rounded hover:bg-gray-700">
+        <Link to="/roles-permissions" className="block w-full text-left px-4 py-2 rounded hover:bg-gray-700">
           Roles & Permissions
-        </button>
+        </Link>
 
-        <button className="block w-full text-left px-4 py-2 rounded hover:bg-gray-700">
+        <Link to="/alumni-accounts" className="block w-full text-left px-4 py-2 rounded hover:bg-gray-700">
           Alumni Accounts
-        </button>
+        </Link>
 
         <p className="text-xs text-gray-400 uppercase mt-6 mb-2">
           Academic Management
         </p>
 
-        <button className="block w-full text-left px-4 py-2 rounded hover:bg-gray-700">
+        <Link to="/programs" className="block w-full text-left px-4 py-2 rounded hover:bg-gray-700">
           Programs
-        </button>
+        </Link>
 
-        <button className="block w-full text-left px-4 py-2 rounded hover:bg-gray-700">
+        <Link to="/subjects" className="block w-full text-left px-4 py-2 rounded hover:bg-gray-700">
           Subjects
-        </button>
+        </Link>
 
-        <button className="block w-full text-left px-4 py-2 rounded hover:bg-gray-700">
+        <Link
+          to="/academic-terms"
+          className="block w-full text-left px-4 py-2 rounded hover:bg-gray-700"
+        >
           Academic Terms
-        </button>
+        </Link>
 
-        <button className="block w-full text-left px-4 py-2 rounded hover:bg-gray-700">
+        <Link
+          to="/schedule-records"
+          className="block w-full text-left px-4 py-2 rounded hover:bg-gray-700"
+        >
           Schedule Records
-        </button>
+        </Link>
 
         <p className="text-xs text-gray-400 uppercase mt-6 mb-2">
           Grade Consolidation
@@ -63,10 +74,30 @@ function Sidebar() {
         </button>
 
         <p className="text-xs text-gray-400 uppercase mt-6 mb-2">
-          Reports
+           Analytics & Prediction
         </p>
 
         <button className="block w-full text-left px-4 py-2 rounded hover:bg-gray-700">
+          Academic Analytics
+        </button>
+
+       <button className="block w-full text-left px-4 py-2 rounded hover:bg-gray-700">
+          Early Warning Dashboard
+        </button>
+
+       <button className="block w-full text-left px-4 py-2 rounded hover:bg-gray-700">
+        Prediction Features
+       </button>
+
+       <button className="block w-full text-left px-4 py-2 rounded hover:bg-gray-700">
+        Program Decision Dashboard
+       </button>
+
+        <p className="text-xs text-gray-400 uppercase mt-6 mb-2">
+          Reports
+        </p>
+
+       <button className="block w-full text-left px-4 py-2 rounded hover:bg-gray-700">
           Academic Reports
         </button>
 
