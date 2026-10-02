@@ -1,9 +1,9 @@
 function AcademicOverview() {
   const academicData = [
-    { title: 'Total Enlisted Students', value: '1,180' },
-    { title: 'Grade Consolidation Progress', value: '82%' },
-    { title: 'Submitted Grades', value: '920' },
-    { title: 'Pending Grade Submissions', value: '260' },
+    { title: 'Total Enlisted Students', value: '1,250' },
+    { title: 'Grade Consolidation Progress', value: '85%' },
+    { title: 'Submitted Grades', value: '100' },
+    { title: 'Pending Grade Submissions', value: '25' },
   ]
 
   return (

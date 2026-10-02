@@ -1,8 +1,8 @@
 function AnalyticsOverview() {
   const analyticsData = [
-    { title: 'Students at Risk', value: '35' },
-    { title: 'High Performing Students', value: '420' },
-    { title: 'Average GPA', value: '2.15' },
+    { title: 'Students at Risk', value: '40' },
+    { title: 'High Performing Students', value: '300' },
+    { title: 'Average GPA', value: '2.25' },
   ]
 
   return (

@@ -1,15 +1,7 @@
-function SummaryCard({ title, value }) {
-  return (
-    <div className="bg-white rounded-lg shadow-sm p-5">
-      <p className="text-sm text-gray-500">
-        {title}
-      </p>
+import SummaryCards from './SummaryCards'
 
-      <h3 className="text-2xl font-bold text-gray-800 mt-2">
-        {value}
-      </h3>
-    </div>
-  )
+function SummaryCard({ title, value }) {
+  return <SummaryCards title={title} value={value} />
 }
 
 export default SummaryCard
